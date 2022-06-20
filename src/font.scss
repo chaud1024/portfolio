@@ -1,0 +1,21 @@
+$font-default : 16px;
+$title : 3.75rem;
+$subtitle : 2rem;
+$body : 1.2rem;
+
+$en_font : raleway, sans-serif;
+$kr_font : Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+@mixin titleLine {
+    font-size : $title;
+    line-height : 2.2;
+    font-family: $en_font;
+}
+@mixin subLine {
+    font-size : $subtitle;
+    font-weight : 500;
+}
+@mixin bodyPadding {
+    font-size : $body;
+    padding-top : 4.25rem;
+}
