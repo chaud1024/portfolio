@@ -28,10 +28,39 @@ body {
         padding : 30px 0;
         @include format.display;
         background-color : rosybrown;
+
+        .nav_right {
+            @include format.display;
+            align-items: center;
+            width : 240px;
+
+            .nav_right_lng {
+                
+                select {
+                    width : 102px;
+                    border : none;
+                    padding : 8px;
+                    box-sizing: border-box;
+                    background-color: transparent;
+                    cursor : pointer;
+                    font-family: font.$en_font;
+                }
+            }
+
+            .nav_right_menu {
+                background-color : orangered;
+                cursor : pointer;
+
+                img {
+                    vertical-align: middle;
+                }
+            }
+        }
     }
 
     .format {
         @include format.display;
+        margin-bottom : 120px;
 
         &.bottom {
             align-items : flex-end;
@@ -75,9 +104,9 @@ body {
                         
                     }
 
-                    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+                    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal  {
                         bottom: 48.5%;
-                        right: 4%;
+                        left : 76%;
                         width: 20%;
                         background-color: transparent;
                     }
