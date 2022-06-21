@@ -44,6 +44,11 @@ body {
                     background-color: transparent;
                     cursor : pointer;
                     font-family: font.$en_font;
+                    font-size: 1.2rem;
+                    -webkit-appearance:none; /* for chrome */
+                    -moz-appearance:none; /*for firefox*/
+                    appearance:none;
+                    background: url('./assets/icon/direction_down.png') no-repeat 97% 50%/44px auto;
                 }
             }
 
