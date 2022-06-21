@@ -4,6 +4,7 @@ import './App.scss';
 import Navbar from './components/Navbar'
 import Main from './components/Main';
 import Skill from './components/Skill';
+import Achiev from './components/Achiev';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Navbar />
       <Main />
       <Skill />
+      <Achiev />
     </div>
     </>
   )

@@ -1,7 +1,5 @@
 import React from 'react'
 
-import TextLine from './TextLine'
-
 const TextArea = ({ title, subtitle, body }) => {
   return (
     <div className="textarea">
