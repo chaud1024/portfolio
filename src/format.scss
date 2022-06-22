@@ -1,5 +1,10 @@
-@mixin display {
-    display : flex;
+@mixin display($flex) {
+    display : $flex;
     justify-content: space-between;
     position : relative;
+}
+
+@mixin padding($padding1, $padding2) {
+    padding : $padding1 $padding2;
+    box-sizing: border-box;
 }

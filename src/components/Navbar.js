@@ -17,6 +17,11 @@ const Navbar = () => {
           </div>
           <div className='nav_right_menu'>
             <img src={MenuIcon} alt="menu icon" />
+            <ul className="wrap_menu">
+              <li>Technomade</li>
+              <li>Jadoo</li>
+              <li>Portfolio</li>
+            </ul>
           </div>
         </div>
     </nav>
