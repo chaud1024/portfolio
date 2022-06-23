@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 import Logo from '../assets/images/logo.png';
 import MenuIcon from '../assets/icon/menu.png';
@@ -6,7 +7,9 @@ import MenuIcon from '../assets/icon/menu.png';
 const Navbar = () => {
   return (
     <nav className="nav_bar">
-        <img src={Logo} alt="home" />
+        <Link to="/">
+          <img src={Logo} alt="home" />
+        </Link>
 
         <div className="nav_right">
           <div className="nav_right_lng">
@@ -18,9 +21,10 @@ const Navbar = () => {
           <div className='nav_right_menu'>
             <img src={MenuIcon} alt="menu icon" />
             <ul className="wrap_menu">
-              <li>Technomade</li>
-              <li>Jadoo</li>
-              <li>Portfolio</li>
+              <CustomLink to="/technomade-service">Technomade: Service pages</CustomLink>
+              <CustomLink to="/technomade-admin">Technomade: Admin</CustomLink>
+              <CustomLink to="/jadoo">Jadoo</CustomLink>
+              <CustomLink to="/portfolio">Portfolio</CustomLink>
             </ul>
           </div>
         </div>
@@ -29,3 +33,14 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+  return (
+    <li className={isActive? "active" : ""}>
+      <Link to={to} {...props}>{children}</Link>
+    </li>
+  )
+}
+

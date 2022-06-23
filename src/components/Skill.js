@@ -14,7 +14,7 @@ const Skill = () => {
             title={"What I can use"}
             subtitle={"효율적인 코드작성을 지향합니다."}
             body={
-                <TextLine text={"HTML \n CSS, SCSS \n JAVASCRIPT, JQUERY, SCSS"} />
+                <TextLine text={"HTML \n CSS, SCSS \n JAVASCRIPT, JQUERY, REACT"} />
             }
         />
     </div>

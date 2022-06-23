@@ -1,19 +1,29 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom';
+
+import Navbar from './components/Navbar'
+import Home from './pages/Home';
 
 import './App.scss';
-import Navbar from './components/Navbar'
-import Main from './components/Main';
-import Skill from './components/Skill';
-import Achiev from './components/Achiev';
+import Technomade from './pages/Technomade';
+import TechnomadeAdmin from './pages/TechnomadeAdmin';
+import Jadoo from './pages/Jadoo';
+import Portfolio from './pages/Portfolio';
 
 const App = () => {
   return (
     <>
     <div className="wrap">
       <Navbar />
-      <Main />
-      <Skill />
-      <Achiev />
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/technomade-service" element={<Technomade/>} />
+            <Route path="/technomade-admin" element={<TechnomadeAdmin/>} />
+            <Route path="/jadoo" element={<Jadoo/>} />
+            <Route path="/portfolio" element={<Portfolio/>} />
+          </Routes>
+        </div>
     </div>
     </>
   )

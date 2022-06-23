@@ -66,7 +66,7 @@ const Achiev = () => {
             title={"Achievements"}
             subtitle={""}
             body={
-                <TextLine text={"깔끔한 디자인과 이를 구현하는 코드 작성, \n 무엇보다 소통을 기반으로 한 작업과 \n 협업을 위해 노력합니다."} />
+                <TextLine text={"깔끔한 디자인과 이를 구현하는 코드 작성, \n 무엇보다 소통을 기반으로 한 작업과 \n 원활한 협업을 위해 노력합니다."} />
             }
         />
     </div>
