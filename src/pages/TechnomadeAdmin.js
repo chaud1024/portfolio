@@ -2,7 +2,7 @@ import React from 'react'
 
 const TechnomadeAdmin = () => {
   return (
-    <div>TechnomadeAdmin</div>
+    <div style={{ fontSize : "50px", textAlign: "center"}}>TechnomadeAdmin</div>
   )
 }
 

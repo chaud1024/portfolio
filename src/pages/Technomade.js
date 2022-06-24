@@ -2,7 +2,7 @@ import React from 'react'
 
 const Technomade = () => {
   return (
-    <div>Technomade</div>
+    <div style={{ fontSize : "50px", textAlign: "center"}}>Technomade</div>
   )
 }
 
