@@ -1,10 +1,20 @@
-@mixin display($flex) {
+@mixin display($flex, $jsc, $alitem) {
     display : $flex;
-    justify-content: space-between;
+    justify-content: $jsc;
+    align-items: $alitem;
     position : relative;
 }
 
 @mixin padding($padding1, $padding2) {
     padding : $padding1 $padding2;
     box-sizing: border-box;
+}
+
+@mixin subMainProject($width, $mt, $mb, $pt, $pl) {
+    width : $width;
+    margin-top : $mt;
+    margin-bottom : $mb;
+    padding-top : $pt;
+    padding-left : $pl;
+    box-sizing : border-box;
 }

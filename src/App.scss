@@ -30,12 +30,10 @@ a {
 
 
     .nav_bar {
-        @include format.display(inline-flex);
-        justify-content: space-between;
-        align-items: center;
+        @include format.display(inline-flex, space-between, center);
         width : 100%;
         @include format.padding(30px, 0px);
-        background-color : rosybrown;
+        background-color : coral;
 
         .nav_right {
             display : inline-block;
@@ -93,7 +91,7 @@ a {
     }
 
     .format {
-        @include format.display(flex);
+        @include format.display(flex, space-between, center);
         margin-bottom : 120px;
 
         &.bottom {
@@ -189,6 +187,60 @@ a {
             }
         }
     
+    }
+
+    .submain {
+        background: burlywood;
+
+        .upper {
+            @include format.subMainProject(100%, 200px, 62px, 0, 0);
+            @include format.display(flex, space-between, flex-end);
+
+            .link {
+                background : url(./assets/icon/link.png) no-repeat;
+    
+                a {
+                    @include font.bodyPadding;
+                    padding : 8px 0 8px 56px;
+                    display : inline-block;
+                }
+            }
+
+            .project_summary {
+                @include format.subMainProject(50%, 0px, 0px, 0px, 70px);
+                .textarea {
+                    background-color : #ffa0a0;
+        
+                    .title {
+                        @include font.titleLine;
+                    }
+                    .subtitle {
+                        @include font.subLine;
+                    }
+                    .body {
+                        @include font.bodyPadding;
+                        span {
+                            font-family: font.$en_font;
+                        }
+                    }
+        
+                }
+            }
+
+        }
+
+        .bottom {
+            @include format.subMainProject(100%, 0px, 62px, 62px, 0);
+            border-top : 1px solid #000;
+
+            @include format.display(flex, end, initial);
+
+            .project_desc {
+                @include format.subMainProject(50%, 0px, 0px, 0px, 70px);
+            }
+        }
+
+
     }
     
 }

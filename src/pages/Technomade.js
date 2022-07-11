@@ -1,8 +1,14 @@
 import React from 'react'
 
+import SubMain from '../components/SubMain'
+
 const Technomade = () => {
   return (
-    <div style={{ fontSize : "50px", textAlign: "center"}}>Technomade</div>
+    <>
+      <div className="sub_main_format">
+        <SubMain />
+      </div>
+    </>
   )
 }
 
