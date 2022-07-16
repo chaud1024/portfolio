@@ -4,11 +4,12 @@ import TextArea from './TextArea'
 import TextLine from './TextLine'
 import ImageArea from './ImageArea'
 
+import '../components/scss/skills.scss'
 import SkillImage from '../assets/images/img02.jpg'
 
 const Skill = () => {
   return (
-    <div className="format bottom">
+    <div className="layout_bottom">
         <ImageArea image={SkillImage}/>
         <TextArea
             title={"What I can use"}

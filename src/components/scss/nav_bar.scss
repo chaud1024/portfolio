@@ -1,3 +1,6 @@
+@use "font";
+@use "format";
+
 .nav_bar {
     @include format.display(inline-flex, space-between, center);
     width : 100%;
@@ -21,7 +24,7 @@
                 -webkit-appearance:none; /* for chrome */
                 -moz-appearance:none; /*for firefox*/
                 appearance:none;
-                background: url('./assets/icon/direction_down.png') no-repeat 97% 50%/44px auto;
+                background: url(../../assets/icon/direction_down.png) no-repeat 97% 50%/44px auto;
             }
         }
 

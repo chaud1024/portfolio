@@ -4,12 +4,13 @@ import TextArea from './TextArea'
 import TextLine from './TextLine'
 import ImageArea from './ImageArea'
 
+import '../components/scss/home_main.scss'
 import MainVisual from '../assets/images/img01.jpg'
 
 const Main = () => {
   return (
     <>
-      <div className="format">
+      <div className="layout">
         <TextArea
           title={`Hi, there🤙`}
           subtitle={`다양한 경험을 즐기는 제너럴리스트이자, 책임감 있는 퍼블리셔 김보라입니다.`}

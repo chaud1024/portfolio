@@ -4,6 +4,8 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import Logo from '../assets/images/logo.png';
 import MenuIcon from '../assets/icon/menu.png';
 
+import './scss/nav_bar.scss'
+
 const Navbar = () => {
   return (
     <nav className="nav_bar">

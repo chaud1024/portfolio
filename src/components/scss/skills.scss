@@ -1,0 +1,37 @@
+@use "font";
+@use "format";
+
+.layout_bottom {
+    @include format.display(flex, space-between, flex-end);
+    margin-bottom : 120px;
+
+    .textarea {
+        width : 41.5%;
+        background-color : #ffa0a0;
+
+        .title {
+            @include font.titleLine;
+        }
+        .subtitle {
+            @include font.subLine;
+        }
+        .body {
+            @include font.bodyPadding;
+            span {
+                font-family: font.$en_font;
+            }
+        }
+
+    }
+    
+    .img-area {
+        width : 58%;
+        overflow : hidden;
+        background-color : sandybrown;
+
+        img {
+            width : 100%;
+            height : 100%;
+        }
+    }
+}

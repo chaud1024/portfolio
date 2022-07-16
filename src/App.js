@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Home from './pages/Home';
 
-import './components/scss/App.scss';
+import './components/scss/initial.scss';
 import Technomade from './pages/Technomade';
 import TechnomadeAdmin from './pages/TechnomadeAdmin';
 import Jadoo from './pages/Jadoo';
