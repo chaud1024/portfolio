@@ -1,0 +1,20 @@
+@use "font";
+@use "format";
+
+.project_summary {
+    @include format.subMainProject(50%, 0px, 0px, 0px, 70px);
+        background-color : #ffa0a0;
+        
+    .name1 {
+        @include font.titleLine;
+    }
+    .name2 {
+        @include font.subLine;
+    }
+    .attr {
+        @include font.bodyPadding;
+        span {
+            font-family: font.$en_font;
+        }
+    }
+}

@@ -1,6 +1,8 @@
 import React from 'react'
 
-const SubSummary = ({ name1, subtitle, body }) => {
+import '../components/scss/sub_summary.scss'
+
+const SubSummary = ({ name1, name2, attr }) => {
   return (
     <div className="project_summary">
         <h1 className="name1">{name1}</h1>
@@ -8,7 +10,12 @@ const SubSummary = ({ name1, subtitle, body }) => {
           {name2}
         </h3>
         <p className="attr">
-          {attr}
+          {attr.split("\n").map((txt) => (
+            <>
+                {txt}
+                <br />
+            </>
+            ))}
         </p>
     </div>
   )

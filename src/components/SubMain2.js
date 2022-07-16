@@ -1,6 +1,5 @@
 import React from 'react'
 
-import TextArea from './TextArea'
 import TextLine from './TextLine'
 
 import '../components/scss/sub_main.scss'
@@ -8,28 +7,8 @@ import '../components/scss/sub_main.scss'
 const SubMain2 = () => {
   return (
     <>
-        <div className="submain">
-            <div className="upper">
-                <div className="link">
-                    <a target="_blank"
-                        rel="noopener noreferrer"
-                        href="http://www.naver.com"
-                    >
-                        사이트 보기 
-                    </a>
-                </div>
-                <div className="project_summary">
-                    <TextArea
-                        title={`Technomade`}
-                        subtitle={`테크노메이드 서비스 웹사이트`}
-                        body={
-                            <TextLine
-                                text={`디자인 기여도 90% \n 퍼블리싱 기여도 95%`}
-                            />
-                        }
-                    />
-                </div>
-            </div>
+        <div className="sub_main">
+
             <div className="bottom">
                 <div className="project_desc">
                     <TextLine

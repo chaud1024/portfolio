@@ -1,18 +1,17 @@
 import React from 'react'
 
+import '../components/scss/sub_link.scss'
+
 const SubLink = ({ subLinkUrl }) => {
-  const onclick = () => window.open('www.naver.com','_blank')
-  
   return (
-    <button className="sub_link" onClick={()=>window.open('www.naver.com','_blank')}>
-      사이트 qhrl
-        {/* <a target="_blank"
+    <div className="sub_link">
+        <a target="_blank"
             rel="noopener noreferrer"
-            href="www.naver.com"
+            href={subLinkUrl}
         >
             사이트 보기 
-        </a> */}
-    </button>
+        </a>
+    </div>
   )
 }
 
