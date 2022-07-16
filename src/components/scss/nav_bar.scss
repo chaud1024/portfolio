@@ -5,7 +5,6 @@
     @include format.display(inline-flex, space-between, center);
     width : 100%;
     @include format.padding(30px, 0px);
-    background-color : coral;
 
     .nav_right {
         display : inline-block;
@@ -30,7 +29,6 @@
 
         .nav_right_menu {
             display : inline-block;
-            background-color : orangered;
             cursor : pointer;
             margin-left : 3rem;
 

@@ -3,6 +3,7 @@ import React from 'react'
 import SubLink from '../components/SubLink'
 import SubSummary from '../components/SubSummary'
 import TextLine from '../components/TextLine'
+import SubImg from '../components/SubImg'
 
 import '../components/scss/sub_main.scss'
 
@@ -31,6 +32,12 @@ const Technomade = () => {
           </div>
         </div>
 
+      </div>
+      <div className='sub_cont cont01'>
+        <SubImg
+          subImage={'/assets/img/structure_service.png'}
+          alt={`테크노메이드 서비스 사이트 고객 문의, 후기, 고객 정보 게시판 구조`}
+        />
       </div>
     </>
   )

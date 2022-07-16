@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const ImageArea = ({ image }) => {
   return (
     <div className="img-area">
