@@ -33,6 +33,7 @@ const Technomade = () => {
         </div>
 
       </div>
+      
       <div className='sub_cont cont01'>
         <SubImg
           subImage={'/assets/img/structure_service.png'}

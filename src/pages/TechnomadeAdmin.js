@@ -3,6 +3,7 @@ import React from 'react'
 import SubLink from '../components/SubLink'
 import SubSummary from '../components/SubSummary'
 import TextLine from '../components/TextLine'
+import SubImg from '../components/SubImg'
 
 import '../components/scss/sub_main.scss'
 
@@ -31,6 +32,17 @@ const TechnomadeAdmin = () => {
           </div>
         </div>
         
+      </div>
+
+      <div className='sub_cont cont01'>
+        <SubImg
+          subImage={'/assets/img/structure_admin.png'}
+          alt={`테크노메이드 어드민 사이트 메뉴 구조`}
+        />
+        <SubImg
+          subImage={'/assets/img/colorchart_admin.png'}
+          alt={`테크노메이드 어드민 사이트 디자인 컬러차트`}
+        />
       </div>
     </>
   )

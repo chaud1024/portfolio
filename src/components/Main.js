@@ -5,7 +5,7 @@ import TextLine from './TextLine'
 import ImageArea from './ImageArea'
 
 import '../components/scss/home_main.scss'
-import MainVisual from '../assets/images/img01.jpg'
+import MainVisual from '../assets/images/headshot.png'
 
 const Main = () => {
   return (
