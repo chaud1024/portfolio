@@ -6,6 +6,14 @@ import TextLine from '../components/TextLine'
 import SubImg from '../components/SubImg'
 
 import '../components/scss/sub_main.scss'
+const IMAGE = {
+  STRUCTURE:{
+    S_ADMIN: '/assets/img/structure_admin.png'
+  }, 
+  COLOR: {
+    C_ADMIN: '/assets/img/colorchart_admin.png'
+  }
+}
 
 const TechnomadeAdmin = () => {
   return (
@@ -36,11 +44,11 @@ const TechnomadeAdmin = () => {
 
       <div className='sub_cont cont01'>
         <SubImg
-          subImage={'/assets/img/structure_admin.png'}
+          subImage={IMAGE.STRUCTURE.S_ADMIN}
           alt={`테크노메이드 어드민 사이트 메뉴 구조`}
         />
         <SubImg
-          subImage={'/assets/img/colorchart_admin.png'}
+          subImage={IMAGE.COLOR.C_ADMIN}
           alt={`테크노메이드 어드민 사이트 디자인 컬러차트`}
         />
       </div>
