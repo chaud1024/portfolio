@@ -4,7 +4,7 @@ import TextArea from './TextArea'
 import TextLine from './TextLine'
 import ImageArea from './ImageArea'
 
-import '../components/scss/skills.scss'
+import '../components/scss/home_skills.scss'
 import SkillImage from '../assets/images/img02.jpg'
 
 const Skill = () => {

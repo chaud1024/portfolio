@@ -55,7 +55,7 @@ const Achiev = () => {
 
                 {photos.map((photo, i) => <SwiperSlide className="swiperslide">
                   <img src={`${photo.name}`} alt="achivement" />
-                  <a href="#" className="slide-button">더보기</a>
+                  <button href="#" className="slide-button">더보기</button>
                 </SwiperSlide>
                 )}
 

@@ -3,14 +3,16 @@ import React from 'react'
 import TextArea from './TextArea'
 import TextLine from './TextLine'
 
-const SubMain = () => {
+import '../components/scss/sub_main.scss'
+
+const SubMain2 = () => {
   return (
     <>
         <div className="submain">
             <div className="upper">
                 <div className="link">
                     <a target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         href="http://www.naver.com"
                     >
                         사이트 보기 
@@ -44,4 +46,4 @@ const SubMain = () => {
   )
 }
 
-export default SubMain
+export default SubMain2
