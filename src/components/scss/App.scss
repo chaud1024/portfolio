@@ -52,7 +52,7 @@ a {
                     -webkit-appearance:none; /* for chrome */
                     -moz-appearance:none; /*for firefox*/
                     appearance:none;
-                    background: url('./assets/icon/direction_down.png') no-repeat 97% 50%/44px auto;
+                    background: url(../../assets/icon/direction_down.png) no-repeat 97% 50%/44px auto;
                 }
             }
 
@@ -197,7 +197,7 @@ a {
             @include format.display(flex, space-between, flex-end);
 
             .link {
-                background : url(./assets/icon/link.png) no-repeat;
+                background : url(../../assets/icon/link.png) no-repeat;
     
                 a {
                     @include font.bodyPadding;
@@ -261,13 +261,13 @@ a {
 
 .swiperNavPrev {
   right : 24.1%;
-  background-image: url('./assets/icon/arrow_left.png');
+  background-image: url(../../assets/icon/arrow_left.png);
   background-color : #fff;
   border-radius : 50%;
 }
 .swiperNavNext {
   right : 0;
-  background-image: url('./assets/icon/arrow_right.png');
+  background-image: url(../../assets/icon/arrow_right.png);
   background-color : #fff;
   border-radius : 50%;
 }

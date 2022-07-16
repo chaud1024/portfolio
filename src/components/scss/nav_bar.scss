@@ -1,0 +1,60 @@
+.nav_bar {
+    @include format.display(inline-flex, space-between, center);
+    width : 100%;
+    @include format.padding(30px, 0px);
+    background-color : coral;
+
+    .nav_right {
+        display : inline-block;
+
+        .nav_right_lng {
+            display : inline-block;
+
+            select {
+                @include format.padding(8px, 8px);
+                width : 102px;
+                border : none;
+                background-color: transparent;
+                cursor : pointer;
+                font-family: font.$en_font;
+                font-size: 1.2rem;
+                -webkit-appearance:none; /* for chrome */
+                -moz-appearance:none; /*for firefox*/
+                appearance:none;
+                background: url('./assets/icon/direction_down.png') no-repeat 97% 50%/44px auto;
+            }
+        }
+
+        .nav_right_menu {
+            display : inline-block;
+            background-color : orangered;
+            cursor : pointer;
+            margin-left : 3rem;
+
+            img {
+                vertical-align: middle;
+            }
+
+            .wrap_menu {
+                position : absolute;
+                background-color : steelblue;
+                z-index : 999;
+                width : 100%;
+                right : 0;
+                display: flex;
+                justify-content: flex-end;
+
+                li {
+                    @include format.padding(16px, 16px);
+
+                    &.active {
+                        color : #fff;
+                        text-decoration: underline;
+                    }
+
+                }
+                
+            }
+        }
+    }
+}
