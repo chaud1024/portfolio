@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './scss/imagearea.scss'
+
 const ImageArea = ({ image }) => {
   return (
     <div className="img-area">

@@ -4,33 +4,4 @@
 .layout {
     @include format.display(flex, space-between, center);
     margin-bottom : 120px;
-
-    .textarea {
-        width : 41.5%;
-
-        .title {
-            @include font.titleLine;
-        }
-        .subtitle {
-            @include font.subLine;
-        }
-        .body {
-            @include font.bodyPadding;
-            span {
-                font-family: font.$en_font;
-            }
-        }
-
-    }
-    
-    .img-area {
-        width : 58%;
-        overflow : hidden;
-        background-color : sandybrown;
-
-        img {
-            width : 100%;
-            height : 100%;
-        }
-    }
 }

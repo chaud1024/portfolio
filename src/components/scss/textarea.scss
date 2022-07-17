@@ -1,0 +1,20 @@
+@use "font";
+@use "format";
+
+.textarea {
+    width : 40%;
+
+    .title {
+        @include font.titleLine;
+    }
+    .subtitle {
+        @include font.subLine;
+    }
+    .body {
+        @include font.bodyPadding;
+        span {
+            font-family: font.$en_font;
+        }
+    }
+
+}

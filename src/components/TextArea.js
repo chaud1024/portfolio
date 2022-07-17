@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './scss/textarea.scss';
+
 const TextArea = ({ title, subtitle, body }) => {
   return (
     <div className="textarea">

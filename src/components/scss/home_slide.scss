@@ -6,26 +6,12 @@
     width : 100%;
 
     .textarea {
-        width : 41.5%;
         background-color : rgba(255,255,255,0.5);
         position : absolute;
         top : 5%;
         left : 0;
         z-index : 999;
         padding-bottom : 30px;
-
-        .title {
-            @include font.titleLine;
-        }
-        .subtitle {
-            @include font.subLine;
-        }
-        .body {
-            @include font.bodyPadding;
-            span {
-                font-family: font.$en_font;
-            }
-        }
     }
 
     .container {
