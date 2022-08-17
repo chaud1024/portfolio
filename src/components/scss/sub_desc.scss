@@ -1,0 +1,18 @@
+@use "font";
+@use "format";
+
+.project_desc {
+  @include format.subDescProject(100%, 20px, 20px);
+
+  .name1 {
+    font-size: font.$subtitle;
+    color: steelblue;
+  }
+  .name2 {
+    @include font.subLine;
+  }
+  .attr {
+    font-size: font.$body;
+    padding: 16px 0;
+  }
+}

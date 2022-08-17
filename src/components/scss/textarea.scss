@@ -2,19 +2,18 @@
 @use "format";
 
 .textarea {
-    width : 40%;
+  width: 37%;
 
-    .title {
-        @include font.titleLine;
+  .title {
+    @include font.titleLine;
+  }
+  .subtitle {
+    @include font.subLine;
+  }
+  .body {
+    @include font.bodyPadding;
+    span {
+      font-family: font.$en_font;
     }
-    .subtitle {
-        @include font.subLine;
-    }
-    .body {
-        @include font.bodyPadding;
-        span {
-            font-family: font.$en_font;
-        }
-    }
-
+  }
 }

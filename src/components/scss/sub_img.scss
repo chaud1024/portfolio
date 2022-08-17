@@ -1,0 +1,11 @@
+@use "font";
+@use "format";
+
+.sub-img {
+  width: 100%;
+  padding-bottom: 7.5rem;
+  box-sizing: border-box;
+  img {
+    width: 100%;
+  }
+}
