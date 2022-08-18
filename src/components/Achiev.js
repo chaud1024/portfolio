@@ -1,79 +1,65 @@
-import React, { useRef } from "react";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import React from "react";
+import { Link } from "react-router-dom";
 
 import TextArea from "./TextArea";
 import TextLine from "./TextLine";
+import ImageArea from "./ImageArea";
 
-import "../components/scss/home_slide.scss";
-import SlideImg1 from "../assets/images/slide1.png";
-import SlideImg2 from "../assets/images/slide2.jpg";
-import SlideImg3 from "../assets/images/slide3.jpg";
-import SlideImg4 from "../assets/images/slide4.jpg";
+import "../components/scss/home_achiev.scss";
+import Img1 from "../assets/images/prj1.png";
+import Img2 from "../assets/images/prj2.jpg";
+import Img3 from "../assets/images/prj3.jpg";
+import Img4 from "../assets/images/prj4.png";
 
 const Achiev = () => {
-  const swiperNavPrevRef = useRef("");
-  const swiperNavNextRef = useRef("");
-  const photos = [
-    { name: SlideImg1, id: 1 },
-    { name: SlideImg2, id: 2 },
-    { name: SlideImg3, id: 3 },
-    { name: SlideImg4, id: 4 },
-  ];
-
   return (
-    <div className="layout_slide">
-      <div className="container">
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          navigation={{
-            prevEl: swiperNavPrevRef,
-            nextEl: swiperNavNextRef,
-          }}
-          speed={800}
-          slidePerView={1}
-          loop
-          pagination={{ clickable: true }}
-          // scrollbar
-          // autoplay={{ delay: 800 }}
-          className="mySwiper"
-          onInit={(swiper) => {
-            swiper.params.navigation.prevEl = swiperNavPrevRef.current;
-            swiper.params.navigation.nextEl = swiperNavNextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }}
-        >
-          {photos.map((photo, i) => (
-            <SwiperSlide className="swiperslide">
-              <img src={`${photo.name}`} alt="achivement" />
-              <button href="#" className="slide-button">
-                더보기
-              </button>
-            </SwiperSlide>
-          ))}
-
-          <div className="swiperNavPrev" ref={swiperNavPrevRef}></div>
-          <div className="swiperNavNext" ref={swiperNavNextRef}></div>
-        </Swiper>
-      </div>
-      <TextArea
-        title={"Achievements"}
-        subtitle={""}
-        body={
-          <TextLine
-            text={
-              "깔끔한 디자인과 이를 구현하는 코드 작성, \n 무엇보다 소통을 기반으로 한 작업과 \n 원활한 협업을 위해 노력합니다."
+    <>
+      <div className="layout_achiev">
+        <>
+          <TextArea
+            title={"Achievements"}
+            subtitle={""}
+            body={
+              <TextLine
+                text={
+                  "깔끔한 디자인과 이를 구현하는 코드 작성, \n 무엇보다 소통을 기반으로 한 작업과 \n 원활한 협업을 위해 노력합니다."
+                }
+              />
             }
           />
-        }
-      />
-    </div>
+          <div className="latest_prj">
+            <ImageArea image={Img4} />
+            <Link to="/BusanBeachWeather" className="visit_prj">
+              작업과정 보러가기
+            </Link>
+          </div>
+        </>
+      </div>
+      <div className="other_prj">
+        <div className="wrap_prj">
+          <div className="prj">
+            <ImageArea image={Img3} />
+            <Link to="/jadoo" className="visit_prj">
+              작업과정 보러가기
+            </Link>
+          </div>
+
+          <div className="prj">
+            <ImageArea image={Img2} />
+            <Link to="/technomade-admin" className="visit_prj">
+              작업과정 보러가기
+            </Link>
+          </div>
+
+          <div className="prj">
+            <ImageArea image={Img1} />
+            <Link to="/technomade-service" className="visit_prj">
+              작업과정 보러가기
+            </Link>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -2,6 +2,6 @@
 @use "format";
 
 .layout {
-    @include format.display(flex, space-between, center);
-    margin-bottom : 120px;
+  @include format.display(flex, space-between, center);
+  margin-bottom: 120px;
 }

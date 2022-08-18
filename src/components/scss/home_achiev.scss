@@ -1,0 +1,46 @@
+@use "font";
+@use "format";
+
+.layout_achiev {
+  @include format.display(flex, space-between, center);
+  margin-bottom: 120px;
+
+  .latest_prj {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .img-area {
+      width: 100%;
+    }
+
+    .visit_prj {
+      font-size: font.$body;
+    }
+  }
+}
+
+.other_prj {
+  @include format.display(flex, space-between, center);
+  margin-bottom: 120px;
+
+  .wrap_prj {
+    width: 100%;
+    @include format.display(flex, space-between, center);
+    margin-bottom: 80px;
+
+    .prj {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .img-area {
+        width: 100%;
+      }
+    }
+  }
+}

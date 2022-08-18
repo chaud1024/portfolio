@@ -39,7 +39,7 @@ const Technomade = () => {
           attr={`문의, 후기 메뉴별, 화면별 구조 및 흐름도와 마이페이지 화면 구조 및 흐름도`}
         />
         <SubImg
-          subImage={"/assets/img/structure_service.png"}
+          subImage={"/assets/img/tech_service/structure_service.png"}
           alt={`테크노메이드 서비스 사이트 고객 문의, 후기, 고객 정보 게시판 구조`}
         />
       </div>
